@@ -1,38 +1,110 @@
+video {
+  object-fit: cover;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
 .App {
-  text-align: center;
+    background-color: rgba(255, 255, 255, 0.5);
+    font-family: 'Poppins', sans-serif;
+    padding: 3%;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h1 {
+  font-size: 45px;
+  color: rgb(1, 45, 43);
+  font-weight: 400;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.container {
+  display: flex;
+  justify-content: center;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.recipe {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+.recipeAll {
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(34, 93, 93, 0.424);
+  width: 30%;
+  padding: 3%;
+  margin: 3%;
   color: white;
+  border-radius: 10px;
 }
 
-.App-link {
-  color: #61dafb;
+.recipeAll h2, .cal {
+  text-align: center;
+  background-color: rgba(34, 93, 93, 0.492);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.recipeAll h2 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-size: 30px;
+}
+
+.recipeImg{
+  width: 100%;
+  border-radius: 10px;
+}
+
+.search {
+  width: 100%;
+  padding: 12px 24px;
+  background-color: transparent;
+  font-size: 14px;
+  line-height: 18px;
+  color: #575756;
+  box-shadow: inset 0px 0px 0px 4px #ddd6e8;
+  border: 0.7px solid #575756;;
+}
+
+.searchBtn{
+  background-color: transparent;
+  border: 0.5px solid #ddd6e8;
+}
+
+.searchBtn:hover {
+  cursor: pointer;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.list {
+  list-style-type: none;
+  color: white;
+  font-size: 14px;
+  font-weight: 300;
+}
+
+form {
+  display: flex;
+  height: 40px;
+}
+
+.recipeAdd {
+  display: flex;
+  justify-content: center;
+}
+
+.recipeAdd p {
+  font-size: 10px;
+  background-color: rgba(212, 234, 45, 0.587);
+  padding: 5px;
+  margin: 2%;
+  color: rgb(1, 45, 43);
+  font-weight: 300;
+}
+
+.recipeAdd p:hover {
+  background-color: rgba(212, 234, 45, 0.74);
 }
