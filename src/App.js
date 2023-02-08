@@ -1,7 +1,7 @@
 import "./App.css";
 import { useEffect, useState } from "react";
-import video from "./food.mp4";
-import search from "./look.png";
+import video from "./video/food.mp4";
+import search from "./img/look.png";
 import Component from "./Component";
 
 function App() {
@@ -61,6 +61,11 @@ function App() {
       <div className="recipe">
         {myRecipes.map((element) => (
           <Component
+            key={
+              element.recipe.label +
+              element.recipe.image +
+              element.recipe.calories
+            }
             label={element.recipe.label}
             image={element.recipe.image}
             cal={element.recipe.calories}

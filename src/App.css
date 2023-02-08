@@ -45,12 +45,12 @@ h1 {
 .recipeAll h2, .cal {
   text-align: center;
   background-color: rgba(34, 93, 93, 0.492);
+  font-family: 'Poppins', sans-serif;
 }
 
 .recipeAll h2 {
-  font-family: 'Poppins', sans-serif;
   font-weight: 400;
-  font-size: 30px;
+  font-size: 25px;
 }
 
 .recipeImg{
@@ -108,3 +108,25 @@ form {
 .recipeAdd p:hover {
   background-color: rgba(212, 234, 45, 0.74);
 }
+
+@media all and (max-width:800px) {
+  .recipeAll {
+    width: 80%;
+  }
+
+  .recipeAll h2 {
+    font-size: 20px;
+  }
+
+  .recipeAdd p {
+    font-size: 8px;
+    background-color: rgba(212, 234, 45, 0.587);
+    padding: 3px;
+    margin: 1%;
+  }
+
+}     
+
+@media all and (max-width:500px) {
+
+} 

@@ -1,4 +1,4 @@
-import check from "./check.png";
+import check from "./img/check.png";
 
 function Component({
   label,
@@ -15,8 +15,8 @@ function Component({
       <img className="recipeImg" src={image} alt="recipeImg" />
       <p className="cal">{cal.toFixed()} calories</p>
       <ul className="list">
-        {ingredientLines.map((ingredient) => (
-          <li>
+        {ingredientLines.map((ingredient, index) => (
+          <li key={index}>
             {" "}
             <img src={check} className="icon" alt="icon" width="25px" />{" "}
             {ingredient}
